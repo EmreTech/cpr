@@ -5,6 +5,9 @@
 #include <mutex>
 #include <string>
 
+#ifdef __SWITCH__
+#include <sys/select.h>
+#endif
 #include <curl/curl.h>
 
 namespace cpr {
